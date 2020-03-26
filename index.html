@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Exam Gread</title>
+</head>
+<body>
+	
+	
+	<script>
+		var subject = [['Bangla', 85],['English', 75], ['Math', 94], ['Quran', 85], ['Hadith', 87], ['Islamic History', 74], ['Arabic 1st', 79], ['Arabic 2nd', 83], ['Balagat', 81]];
+		var avgMarks = 0;
+
+		for(var i = 0; i<subject.length; i++){
+			avgMarks+=subject[i][1];
+			var avg = (avgMarks/subject.length);
+
+		}
+
+		
+		console.log(avg);
+
+		if(avg < 33){
+			console.log('Gread F')
+		}
+		else if(avg < 49){
+			console.log('Gread C');
+		}
+		else if(avg < 59){
+			console.log('Gread B')
+
+		}
+		else if(avg < 69){
+			console.log('Gread A-');
+		}
+		else if(avg <79){
+			console.log('Gread A');
+
+		}
+		else if(avg <=100){
+			console.log('Gread A+');
+			
+		}else{
+			console.log('No result Found');
+		}
+	</script>
+</body>
+</html>
